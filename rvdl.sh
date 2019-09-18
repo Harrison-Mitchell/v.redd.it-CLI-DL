@@ -2,8 +2,8 @@
 
 if test "$#" -ne 2; then
 	echo -e "Usage:   "$0 url outFile.ext
-	echo -e "Example: "$0 https://v.redd.it/2t8144z848n31 ~/Downloads/meme.mkv
-	echo -e "Example: "$0 https://www.reddit.com/r/WTF/comments/cy8uqy/lmao_wtf/ out.mp4
+	echo -e "Example: "$0 https://v.redd.it/2t8144z848n31 \~/Downloads/meme.mkv
+	echo -e "Example: "$0 https://old.reddit.com/r/funny/comments/d5hk1h/when_the_goal_scores_you/ out.mp4
 	exit 0
 fi
 
