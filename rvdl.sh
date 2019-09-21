@@ -21,7 +21,7 @@ AUD=$(echo $VID | cut -d \/ -f 1-4)/audio
 
 wget -q "$VID" -O vid.webm
 wget -q "$AUD" -O aud.mp3
-ffmpeg -nostats -loglevel 0 i vid.webm -i aud.mp3 -c copy $2
+ffmpeg -nostats -loglevel 0 -i vid.webm -i aud.mp3 -c copy $2
 if [ ! -f "$2" ]; then ffmpeg -nostats -loglevel 0 -i vid.webm -c copy $2; fi
 
 rm vid.webm
